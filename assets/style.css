@@ -214,10 +214,14 @@ header {
   justify-content: space-between;
 }
 #banner .arrow_left {
-  margin-left: 10px;
+  margin-left: 7%;
+  height: 70px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 #banner .arrow_right {
-  margin-right: 10px;
+  margin-right: 7%;
+  height: 70px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 /* Gestion des points du carrousel */
 .dots {
@@ -225,6 +229,7 @@ header {
   bottom: 40px;
   display: flex;
 }
+
 .dot {
   margin-inline: 5px;
   width: 13px;
