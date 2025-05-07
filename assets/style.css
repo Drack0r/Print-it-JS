@@ -216,21 +216,23 @@ header {
 #banner .arrow_left {
   margin-left: 7%;
   height: 70px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); */
 }
 #banner .arrow_right {
   margin-right: 7%;
   height: 70px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); */
 }
 /* Gestion des points du carrousel */
 .dots {
   position: absolute;
   bottom: 40px;
   display: flex;
+  gap: 0.8em;
 }
 
 .dot {
+  cursor: pointer;
   margin-inline: 5px;
   width: 13px;
   height: 13px;

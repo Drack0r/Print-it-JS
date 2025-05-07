@@ -59,7 +59,7 @@ function prevSlide() {
   console.log(`Vous passez à l'image ${currentIndex + 1}`);
 }
 
-// Ajout d'écouteurs d'événements sur les flèches
+// Ajout d'écouteurs d'événements sur les flèches de navigation
 leftArrow.addEventListener("click", () => {
   console.log("Clic sur la flèche de gauche");
   prevSlide();
@@ -68,6 +68,17 @@ leftArrow.addEventListener("click", () => {
 rightArrow.addEventListener("click", () => {
   console.log("Clic sur la flèche de droite");
   nextSlide();
+});
+
+// Navigation avec les flèches du clavier
+document.addEventListener("keydown", (event) => {
+  if (event.code === "ArrowRight") {
+    console.log("Flèche de droite enfoncée");
+    nextSlide();
+  } else if (event.code === "ArrowLeft") {
+    console.log("Flèche de gauche enfoncée");
+    prevSlide();
+  }
 });
 
 // Création dynamique des points de navigation
